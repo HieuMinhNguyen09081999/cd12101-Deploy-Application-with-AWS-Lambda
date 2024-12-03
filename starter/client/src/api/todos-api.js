@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
 export async function getTodos(idToken) {
-  console.log('Fetching todos')
+  console.log('Fetching todos', process.env.REACT_APP_API_ENDPOINT)
 
   const response = await Axios.get(
     `${process.env.REACT_APP_API_ENDPOINT}/todos`,
@@ -27,7 +27,8 @@ export async function createTodo(idToken, newTodo) {
       }
     }
   )
-  return response.data.item
+ 
+  return response.data.newTodo
 }
 
 export async function patchTodo(idToken, todoId, updatedTodo) {

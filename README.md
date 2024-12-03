@@ -195,3 +195,6 @@ We can then use curl command to upload an image (`image.jpg` in this example) to
 curl -X PUT -T image.jpg -L "https://serverless-c4-todo-images.s3.us-east-1.amazonaws.com/...&x-id=PutObject"
 ```
 
+login:
+user@gmail.com
+Hieu@09081999
